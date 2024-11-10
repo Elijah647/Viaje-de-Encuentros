@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Great+Vibes&display=swap');
+
+.navbar {
+  background-color: #343a40; 
+  padding: 1rem 0; 
+  transition: background-color 0.3s ease-in-out; 
+  position: sticky;
+  top: 0;
+  z-index: 999; 
+  background-color: #cac8c8;
+  box-shadow: 0px 5px 5px #571e1e54;
+  font-weight: 400;
+  height: 60px; 
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.navbar .navbar-logo {
+  height: 80px; 
+  width: 80px;
+  transition: transform 0.3s ease; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+.navbar .navbar-brand {
+  cursor: pointer;
+}
+
+.navbar .nav-link {
+  color: #000000; 
+  font-size: 1rem; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+  padding: 0.5rem 1.5rem; 
+  transition: color 0.3s ease, padding 0.3s ease; 
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #007bff; 
+  border-bottom: 2px solid black;
+}
+
+.navbar .dropdown-menu {
+  background-color: #343a40; 
+  border: 1px solid #444; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 0.5rem 0; 
+  min-width: 200px; 
+}
+
+.navbar .dropdown-item {
+  color: #ffffff; 
+  font-size: 1rem; 
+  padding: 0.5rem 1.5rem; 
+  transition: background-color 0.3s ease, padding-left 0.3s ease; 
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #007bff; 
+  color: #fff; 
+  padding-left: 2rem; 
+}
+
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:active {
+  background-color: #0056b3; 
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .navbar .dropdown-menu {
+    width: 100%; 
+    position: static; 
+    box-shadow: none; 
+    border-radius: 0; 
+  }
+
+  .navbar .dropdown-item {
+    padding-left: 1rem; 
+  }
+
+  .navbar .navbar-logo {
+    height: 40px; 
+    position: relative; 
+  }
+
+  .navbar .navbar-toggler {
+    background-color: transparent; 
+    height: 50px; 
+    margin-bottom: 0; 
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    justify-content: space-between; /* Ensure proper spacing for items */
+    
+  }
+
+  .nav-content{
+      margin: -30px;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row; 
+    align-items: center; 
+  }
+
+  .navbar .navbar-logo {
+    height: 80px; 
+    position: relative; 
+    transform: translateX(0); 
+    width: 70px;
+  }
+
+  .navbar .navbar-toggler {
+    background-color: transparent; 
+    height: 50px; 
+    margin-bottom: 0; 
+  }
+}

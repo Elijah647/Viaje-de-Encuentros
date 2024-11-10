@@ -1,0 +1,64 @@
+.country-page {
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(231, 228, 228);
+  color: black;
+}
+
+
+.country-title {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space out items */
+  width: 350px; /* Fixed width for the title area */
+  margin: 0 auto; /* Center the title area horizontally */
+}
+
+.country-title h1 {
+  flex: 1; /* Allow the title to take up available space */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove default margin */
+  padding: 30px;
+}
+
+.arrow-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default border */
+  font-size: 50px; /* Increase arrow size */
+  font-weight: 800;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: rgb(0, 0, 0);
+  ;
+}
+
+.arrow-button:hover {
+  color: #0381e1; /* Change color on hover */
+  box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.158);
+  transition: transform 0.3s ease; /* For smooth zoom effect */
+  border-radius: 25px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap properly */
+  justify-content: space-between; /* Add space between columns */
+  padding: 30px 100px;
+}
+
+.my-masonry-grid_column {
+  flex: 1 1 200px; /* Flex items that will grow and shrink */
+  padding: 0.25em;
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column img {
+  width: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Makes the image fill the box without stretching */
+  max-height: 300px; 
+  transition: transform 0.9s ease;
+  margin-bottom: 10px; /* Adds space between images */
+}
+
+.image{
+  cursor: pointer; /* Change cursor to pointer on hover */ 
+}

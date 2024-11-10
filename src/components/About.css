@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+
+.about-content {
+    color: rgb(3, 3, 3);
+    margin: 0 3em;
+    text-align: center;
+    position: relative;
+    padding: 1em 5em 1em 5em;
+    font-size: 1rem;
+    border-left: 10px solid black;
+  }
+
+  .about-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .about-photo {
+    flex: 1;
+  }
+
+  .about-photo img {
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+
+  .about-description {
+    flex: 2;
+    text-align: start;
+    font-size: 0.9em;
+  }
+
+  .about-description p{
+    padding: 0px 5px;
+  }
+
+  h5{
+    text-align: center;
+  }
